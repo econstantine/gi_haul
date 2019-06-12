@@ -1,0 +1,98 @@
+/*
+===============================================================================================
+Component:  style.CSS
+Purpose:    To be used with the gi haul website. Could potentially override bootstrap styles
+Structure:  1) Class styles 2) ID styles. Both by alphabetical Order
+Programmer: Ed Constantine
+
+Modification History:
+Date             Programmer           Description
+--------         -------------        --------------------
+May 29, 2019     EConstantine         Initial Creation
+===============================================================================================
+*/
+
+h1
+{
+    font-style: italic;
+}
+
+/*  ===== STYLES BY CLASS  ===== */
+.taketoaction
+{
+    vertical-align: middle;
+
+}
+
+.site_alignment
+{
+
+}
+
+.grey_background
+{
+    background-color: #F2F2F2;
+}
+
+.foot_font
+{
+    color: white;
+}
+
+/*  ===== STYLES BY ID  ===== */
+#header
+{
+    background-image: url('img/hero.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 300px;
+
+}
+#header_action_box
+{
+    background: rgba(0, 0, 0, .6);
+    bottom: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+#rec_img
+{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#junkWeRemove
+{
+    background-color: #F2F2F2;
+}
+
+#highlight
+{
+    color: red;
+    font-weight: bold;
+}
+
+#foot
+{
+    background-color: black;
+}
+
+#footer_img
+{
+    width: 20%;
+    height: 25%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

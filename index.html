@@ -13,48 +13,407 @@
 
   <body>
 
-      <!-- NAVIGATION BAR -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- NAVIGATION BAR -->
+    <div class="container-fluid mx-0 h-100" id="mster_fold">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+        <nav class="navbar navbar-expand-lg navbar-transparent mx-md-5 mt-md-3">  <!--  mx-md-5 mt-md-3 -->
+
+            <div class="logo ml-md-5">
+              <div>
+                <a class="navbar-brand" href="#"><img src="img/gihaul--logo.png" width="150px"/></a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-md-5">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <b>Call 1-800-8GI-HAUL</b>
+                        </div>
+                        <div class="row">
+                            <li class="nav-item">
+                              <a class="nav-link nav_button" href="#">How it Works</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav_button" href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav_button" href="#">Book Now</a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+    <!-- END - NAVIGATION BAR -->
+
+    <!-- Above the fold  -->
+    <div class="d-flex container-fluid vh-80 vw-80" id="header"> <!-- style="height: 200px; -->
+
+            <div class="row d-flex align-items-end mt-auto" id="header_action_box">   <!--  d-sm-none d-md-block -->
+                <div class="col-1 align-self-center">
+                    <img src="img/location.png" width="20px" alt="">
+                </div>
+                <div class="col-2 p-0">
+                    <h2>TAMPA, FL.</h2>
+                </div>
+                <div class="col-4 d-flex align-items-end mx-0 px-0">
+                    <h2>Check Availability</h2>
+                </div>
+                <div class="col-4 align-self-center">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Enter you ZipCode">
+                    </div>
+                </div>
+                <div class="col-1 align-self-center">
+                    <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#checkAvailability" id="checkAvail">Go</button>
+
+                    <div class="modal fade" id="checkAvailability" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title">Enter Your Information Below</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                              <div class="modal-body">
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress2">Address 2</label>
+                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>...</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Check me out
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                  </form>
+                              </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="ml-auto d-md-none">
+                    <a href="tel:18558444285">1-855-GI-HAUL</a>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid mt-5 taketoaction">
+        <div class="row">
+            <div class="col-8 align-self-center pl-4">
+                <h1>Tampa Bay Area Junk Removal</h1>
+                <p>Whether it's residential or commercial, we're happy to remove your trash so you don't have to!</p>
+                <button class="btn btn-primary" name="button">BOOK NOW</button>
+                <button class="btn btn-link" name="button" data-toggle="modal" data-target="#removeItems">ITEMS WE REMOVE</button>
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="img/junk.jpg">
+            </div>
         </div>
-      </nav>
-      <!-- END - NAVIGATION BAR -->
+
+        <div class="modal fade" id="removeItems" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Items We Remove</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col">
+                          <ul>
+                              <li>Refrigerator and freezer removal</li>
+                              <li>Hot tub and jacuzzi removal</li>
+                              <li>Furniture removal</li>
+                              <li>Swingset and Trampoline removal </li>
+                              <li>Television removal</li>
+                              <li>Appliance Removal</li>
+                              <li>Business Junk Removal</li>
+                          </ul>
+                      </div>
+                      <div class="col">
+                          <ul>
+                              <li>Oven and stove removal</li>
+                              <li>Old clutter removal</li>
+                              <li>Yard debris removal</li>
+                              <li>Waste removal</li>
+                              <li>Garbage removal</li>
+                              <li>Contractor garbage and waste removal</li>
+                              <li>Don't see your item on our list? Contact us.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- END - Above the fold  -->
+
+
+    <!-- Recommendations - Social Section -->
+    <div class="container-fluid py-5" id="center">
+        <div class="row">
+            <div class="col">
+                <div class="row pt-3 d-flex justify-content-center">
+                    <h3>TOP RATED JUNK REMOVAL</h3>
+                </div>
+                <div class="row pb-5 d-flex justify-content-center">
+                    <h5>See what our customers say about us</h5>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 vw-10 vh-10">
+                        <img class="img-fluid center-block" src="img/google.png" id="rec_img">
+                    </div>
+                    <div class="col-4 vw-10 vh-10">
+                        <img class="img-fluid center-block" src="img/home-advisor.png" id="rec_img">
+                    </div>
+                    <div class="col-4 vw-10 vh-10">
+                        <img class="img-fluid center-block" src="img/facebook.png" id="rec_img">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- END - Recommendations - Social Section -->
+
+    <!-- Image Gallery -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+
+            </div>
+        </div>
+    </div>
+    <!-- END - Image Gallery  -->
+
+    <!-- Junk We Remove -->
+    <div class="container-fluid pb-3 grey_background">
+        <div class="row">
+            <div class="col">
+                <div class="row py-3 pl-4">
+                    <h1>Junk we remove</h1>
+                </div>
+                <div class="row pb-5 pl-4">
+                    <h5>Whether it's residential or commercial, we're happy to remove your trash so you don't have to!</h5>
+                </div>
+                <div class="row d-flex justify-content-center px-5">
+                    <div class="col">
+                        <ul>
+                            <li>Refrigerator and freezer removal</li>
+                            <li>Hot tub and jacuzzi removal</li>
+                            <li>Furniture removal</li>
+                            <li>Swingset and Trampoline removal </li>
+                            <li>Television removal</li>
+                            <li>Appliance Removal</li>
+                            <li>Business Junk Removal</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Oven and stove removal</li>
+                            <li>Old clutter removal</li>
+                            <li>Yard debris removal</li>
+                            <li>Waste removal</li>
+                            <li>Garbage removal</li>
+                            <li>Contractor garbage and waste removal</li>
+                            <li>Don't see your item on our list? Contact us.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center pt-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoteModal">Request a Quote</button>
+                </div>
+
+                <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Contact Us!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Request Quote</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- END - Junk We Remove -->
+
+    <!-- Why Hire -->
+    <div class="container-fluid my-5 taketoaction">
+        <div class="row pl-4">
+            <div class="col-8 align-self-center">
+                <h1>Why Hire G.I. Haul? </h1>
+                <p id="highlight">New Customer get $35 off!</p>
+                <p>Our hassle free services allow you to go about your life, well we do the heavy lifting for you.</p>
+                <button class="btn btn-primary" name="button" data-toggle="modal" data-target="#booknow">BOOK NOW</button>
+            </div>
+            <div class="col-4">
+                <img class="img-fluid d-flex justify-content-center" src="img/beach.jpg">
+            </div>
+        </div>
+
+        <div class="modal fade" id="booknow" tabindex="-1" role="dialog" aria-labelledby="booknow" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Book Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Request Quote</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END - Why Hire -->
+
+    <!-- FOOTER  -->
+    <div class="container-fluid" id="foot">
+        <div class="row">
+            <div class="col">
+                <div class="row d-flex justify-content-center pt-4">
+                    <h1 class="foot_font">Tampa Bay Area Junk Removal</h1>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <button type="button" class="btn btn-link foot_font px-3 pb-3" name="button">How it Works</button>
+                    <button type="button" class="btn btn-link foot_font px-3 pb-3" name="button">Junk Reviews</button>
+                    <button type="button" class="btn btn-link foot_font px-3 pb-3" name="button">Book Now</button>
+                </div>
+                <div class="row">
+                    <img src="img/gihaul-logo--footer.jpg" class="d-flex justify-content-center pt-5 pb-3" id="footer_img">
+                </div>
+                <div class="row foot_font d-flex justify-content-center">
+                    <h2>Call 1-855-8GI-HAUL</h2>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <button type="button" class="btn btn-link foot_font" name="button">Franchise Opportunities</button>
+                    <button type="button" class="btn btn-link foot_font" name="button">Terms of Service</button>
+                    <button type="button" class="btn btn-link foot_font" name="button">Privacy Policy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END - FOOTER -->
+
+
+    <!-- MODALS -->
+
+    <!-- END - MODALS -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
+
   </body>
 </html>
