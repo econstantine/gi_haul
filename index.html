@@ -151,12 +151,15 @@
                 </div>
             </div>
     </div>
+    <!-- END - Above the fold  -->
+
+    <!-- CALL TO ACTION -->
     <div class="container-fluid mt-5 taketoaction">
         <div class="row">
             <div class="col-8 align-self-center pl-4">
                 <h1>Tampa Bay Area Junk Removal</h1>
                 <p>Whether it's residential or commercial, we're happy to remove your trash so you don't have to!</p>
-                <button class="btn btn-primary" name="button">BOOK NOW</button>
+                <button class="btn btn-success" name="button">BOOK NOW</button>
                 <button class="btn btn-link" name="button" data-toggle="modal" data-target="#removeItems">ITEMS WE REMOVE</button>
             </div>
             <div class="col-4">
@@ -206,8 +209,7 @@
           </div>
         </div>
     </div>
-    <!-- END - Above the fold  -->
-
+    <!-- END - CALL TO ACTION -->
 
     <!-- Recommendations - Social Section -->
     <div class="container-fluid py-5" id="center">
@@ -241,8 +243,11 @@
     <!-- Image Gallery -->
     <div class="container-fluid">
         <div class="row">
-            <div class="">
-
+            <div class="col">
+                <img class="img-fluid" src="img/ig-1.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="img/ig-2.jpg" alt="">
             </div>
         </div>
     </div>
@@ -340,37 +345,105 @@
         </div>
 
         <div class="modal fade" id="booknow" tabindex="-1" role="dialog" aria-labelledby="booknow" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Book Now</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Name:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Phone Number:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Request Quote</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-            </div>
-        </div>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Book Now</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="container-fluid">
+                            <form>
+								<div class="form-group">
+									<label for="recipient-name" class="col-form-label">Name:</label>
+									<input type="text" class="form-control" id="recipient-name">
+								</div>
+
+                                <div class="form-group" id="locationField">
+                                    <label for="autocomplete" class="col-form-label">Search for your Address:</label>
+                                    <input id="autocomplete"placeholder="Enter your address" type="text"/>  <!-- onFocus="geolocate()" -->
+                                </div>
+
+								<div class="form-group">
+									<label for="recipient_address" class="col-form-label">Address:</label>
+									<input type="text" class="form-control" id="recipient_address">
+								</div>
+    							<div class="form-row">
+    								<div class="col-md-6">
+    									<div class="form-group">
+    										<label for="recipient_city" class="col-form-label">City:</label>
+    										<input type="text" class="form-control" id="recipient_city">
+    									</div>
+    								</div>
+    								<div class="col-md-4">
+    									<div class="form-group">
+    										<label for="recipient-state" class="col-form-label">State:</label>
+    										<input type="text" class="form-control" id="recipient-city">
+    									</div>
+    								</div>
+    								<div class="col-md-2">
+    									<div class="form-group">
+    										<label for="recipient_postal_code" class="col-form-label">ZIP:</label>
+    										<input type="number" class="form-control" id="recipient_postal_code">
+    									</div>
+    								</div>
+    							</div>
+    							<div class="form-row">
+    								<div class="col">
+    									<div class="form-group">
+    										<label for="recipient-phonenum" class="col-form-label">Phone Number:</label>
+    										<input type="tel" class="form-control" id="recipient-phonenum">
+    									</div>
+    								</div>
+    								<div class="col">
+    									<div class="form-group">
+    										<label for="recipient-email" class="col-form-label">Email Address:</label>
+    										<input type="email" class="form-control" id="recipient-email">
+    									</div>
+    								</div>
+    							</div>
+    							<div class="form-row">
+    								<div class="col-md-6 ml-auto">
+    									<div class="form-check">
+    										<input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+    										<label class="form-check-label" for="exampleRadios1">Residential</label>
+    									</div>
+    								</div>
+    								<div class="col-md-6 ml-auto">
+    									<div class="form-check">
+    										<input class="form-check-input" type="radio" name="exampleRadios" value="option2">
+    										<label class="form-check-label" for="exampleRadios2">Commercial</label>
+    									</div>
+    								</div>
+    							</div>
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                  <label class="custom-control-label" for="customCheck1">Subscribe to our Newsletter</label>
+                                </div>
+								<div class="form-group">
+									<label for="message-text" class="col-form-label">Description of the Junk:</label>
+									<textarea class="form-control" id="message-text"></textarea>
+								</div>
+    							<div class="form-group">
+    								<div class="form-check">
+    									<input class="form-check-input" type="checkbox" id="gridCheck">
+    									<label class="form-check-label" for="gridCheck">Check me out</label>
+    								</div>
+    							</div>
+                            </form>
+                        </div>
+    				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Request Quote</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
 
     </div>
     <!-- END - Why Hire -->
@@ -388,9 +461,12 @@
                     <button type="button" class="btn btn-link foot_font px-3 pb-3" name="button">Book Now</button>
                 </div>
                 <div class="row">
-                    <img src="img/gihaul-logo--footer.jpg" class="d-flex justify-content-center pt-5 pb-3" id="footer_img">
+                    <img src="img/gihaul-logo--footer.jpg" class="d-flex justify-content-center pt-5 pb-5" id="footer_img1">
                 </div>
-                <div class="row foot_font d-flex justify-content-center">
+                <div class="row">
+                    <img src="img/veteran-owned--black.png" class="d-flex justify-content-center" id="footer_img2">
+                </div>
+                <div class="row foot_font d-flex justify-content-center pt-3">
                     <h2>Call 1-855-8GI-HAUL</h2>
                 </div>
                 <div class="row d-flex justify-content-center">
@@ -403,17 +479,19 @@
     </div>
     <!-- END - FOOTER -->
 
-
-    <!-- MODALS -->
-
-    <!-- END - MODALS -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"> </script>
 
+
+    <!-- FUNCTIONAL EXAMPLE - NOT MY KEY  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete" async defer></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByj8ZJDEpG-1mhz1ZvQk2eEvOqonNGpbU&libraries=places&callback=initAutocomplete" async defer></script>
+
+    <!-- MY ORIGINAL JAVASCRIPT FOR GOOGLE'S API -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByj8ZJDEpG-1mhz1ZvQk2eEvOqonNGpbU&libraries=places"></script> -->
+    <script src="script.js"> </script>
   </body>
 </html>

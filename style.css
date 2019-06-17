@@ -87,7 +87,7 @@ h1
     background-color: black;
 }
 
-#footer_img
+#footer_img1
 {
     width: 20%;
     height: 25%;
@@ -95,4 +95,15 @@ h1
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#footer_img2
+{
+    width: 10%;
+    height: 5%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
