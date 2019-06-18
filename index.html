@@ -58,8 +58,8 @@
     <div class="d-flex container-fluid vh-80 vw-80" id="header"> <!-- style="height: 200px; -->
 
             <div class="row d-flex align-items-end mt-auto" id="header_action_box">   <!--  d-sm-none d-md-block -->
-                <div class="col-1 align-self-center">
-                    <img src="img/location.png" width="20px" alt="">
+                <div class="col-1 p-0">
+                    <img class="p-0 justify-content-end " src="img/location.png" width="20px" alt="">
                 </div>
                 <div class="col-2 p-0">
                     <h2>TAMPA, FL.</h2>
@@ -144,7 +144,6 @@
                       </div>
                     </div>
 
-
                 </div>
                 <div class="ml-auto d-md-none">
                     <a href="tel:18558444285">1-855-GI-HAUL</a>
@@ -159,7 +158,7 @@
             <div class="col-8 align-self-center pl-4">
                 <h1>Tampa Bay Area Junk Removal</h1>
                 <p>Whether it's residential or commercial, we're happy to remove your trash so you don't have to!</p>
-                <button class="btn btn-success" name="button">BOOK NOW</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#booknow">BOOK NOW</button>
                 <button class="btn btn-link" name="button" data-toggle="modal" data-target="#removeItems">ITEMS WE REMOVE</button>
             </div>
             <div class="col-4">
@@ -343,108 +342,6 @@
                 <img class="img-fluid d-flex justify-content-center" src="img/beach.jpg">
             </div>
         </div>
-
-        <div class="modal fade" id="booknow" tabindex="-1" role="dialog" aria-labelledby="booknow" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Book Now</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-
-					<div class="modal-body">
-						<div class="container-fluid">
-                            <form>
-								<div class="form-group">
-									<label for="recipient-name" class="col-form-label">Name:</label>
-									<input type="text" class="form-control" id="recipient-name">
-								</div>
-
-                                <div class="form-group" id="locationField">
-                                    <label for="autocomplete" class="col-form-label">Search for your Address:</label>
-                                    <input id="autocomplete"placeholder="Enter your address" type="text"/>  <!-- onFocus="geolocate()" -->
-                                </div>
-
-								<div class="form-group">
-									<label for="recipient_address" class="col-form-label">Address:</label>
-									<input type="text" class="form-control" id="recipient_address">
-								</div>
-    							<div class="form-row">
-    								<div class="col-md-6">
-    									<div class="form-group">
-    										<label for="recipient_city" class="col-form-label">City:</label>
-    										<input type="text" class="form-control" id="recipient_city">
-    									</div>
-    								</div>
-    								<div class="col-md-4">
-    									<div class="form-group">
-    										<label for="recipient-state" class="col-form-label">State:</label>
-    										<input type="text" class="form-control" id="recipient-city">
-    									</div>
-    								</div>
-    								<div class="col-md-2">
-    									<div class="form-group">
-    										<label for="recipient_postal_code" class="col-form-label">ZIP:</label>
-    										<input type="number" class="form-control" id="recipient_postal_code">
-    									</div>
-    								</div>
-    							</div>
-    							<div class="form-row">
-    								<div class="col">
-    									<div class="form-group">
-    										<label for="recipient-phonenum" class="col-form-label">Phone Number:</label>
-    										<input type="tel" class="form-control" id="recipient-phonenum">
-    									</div>
-    								</div>
-    								<div class="col">
-    									<div class="form-group">
-    										<label for="recipient-email" class="col-form-label">Email Address:</label>
-    										<input type="email" class="form-control" id="recipient-email">
-    									</div>
-    								</div>
-    							</div>
-    							<div class="form-row">
-    								<div class="col-md-6 ml-auto">
-    									<div class="form-check">
-    										<input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
-    										<label class="form-check-label" for="exampleRadios1">Residential</label>
-    									</div>
-    								</div>
-    								<div class="col-md-6 ml-auto">
-    									<div class="form-check">
-    										<input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-    										<label class="form-check-label" for="exampleRadios2">Commercial</label>
-    									</div>
-    								</div>
-    							</div>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Subscribe to our Newsletter</label>
-                                </div>
-								<div class="form-group">
-									<label for="message-text" class="col-form-label">Description of the Junk:</label>
-									<textarea class="form-control" id="message-text"></textarea>
-								</div>
-    							<div class="form-group">
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="gridCheck">
-    									<label class="form-check-label" for="gridCheck">Check me out</label>
-    								</div>
-    							</div>
-                            </form>
-                        </div>
-    				</div>
-
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Request Quote</button>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-				</div>
-			</div>
-		</div>
-
     </div>
     <!-- END - Why Hire -->
 
@@ -478,6 +375,109 @@
         </div>
     </div>
     <!-- END - FOOTER -->
+
+
+    <div class="modal fade" id="booknow" tabindex="-1" role="dialog" aria-labelledby="booknow" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+
+                            <div class="form-group" id="locationField">
+                                <label for="autocomplete" class="col-form-label">Search for your Address:</label>
+                                <input class="form-control" id="autocomplete" placeholder="Enter your address" type="text"/>  <!-- onFocus="geolocate()" -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="recipient_address" class="col-form-label">Address:</label>
+                                <input type="text" class="form-control" id="recipient_address">
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="recipient_city" class="col-form-label">City:</label>
+                                        <input type="text" class="form-control" id="recipient_city">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="recipient-state" class="col-form-label">State:</label>
+                                        <input type="text" class="form-control" id="recipient-city">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="recipient_postal_code" class="col-form-label">ZIP:</label>
+                                        <input type="number" class="form-control" id="recipient_postal_code">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="recipient-phonenum" class="col-form-label">Phone Number:</label>
+                                        <input type="tel" class="form-control" id="recipient-phonenum">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="recipient-email" class="col-form-label">Email Address:</label>
+                                        <input type="email" class="form-control" id="recipient-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 ml-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">Residential</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">Commercial</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label" for="customCheck1">Subscribe to our Newsletter</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Description of the Junk:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <!-- <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">Check me out</label>
+                                </div>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request Quote</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
