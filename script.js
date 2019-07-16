@@ -10,13 +10,14 @@ Date             Programmer           Description
 June 11, 2019    EConstantine         Initial Creation
 ===============================================================================================
 */
-// $(document).ready(function() {
-//
-//    $('checkAvail').click(function(){
-//      $('#checkAvail').toggle();
-//    });
-//    console.log("done");
-// });
+
+ // $(document).ready(function() {
+ //
+ //    $('checkAvail').click(function(){
+ //      $('#checkAvail').toggle();
+ //    });
+ //    console.log("done");
+ // });
 
 var placeSearch, autocomplete;
 

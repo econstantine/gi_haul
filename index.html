@@ -16,7 +16,7 @@
     <!-- NAVIGATION BAR -->
     <div class="container-fluid mx-0 h-100" id="mster_fold">
 
-        <nav class="navbar navbar-expand-lg navbar-transparent mx-md-5 mt-md-3">  <!--  mx-md-5 mt-md-3 -->
+        <nav class="navbar navbar-expand-md navbar-transparent mx-md-5 mt-md-3">  <!--  mx-md-5 mt-md-3 -->
 
             <div class="logo ml-md-5">
               <div>
@@ -28,11 +28,16 @@
               </button>
             </div>
 
+            <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+              aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="animated-icon3"><span></span><span></span><span></span></div>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto mr-md-5">
                     <div class="container">
                         <div class="row d-flex justify-content-end">
-                            <b>Call 1-800-8GI-HAUL</b>
+                            <a href="tel:18008444285"><b>Call 1-800-8GI-HAUL</b></a>
                         </div>
                         <div class="row">
                             <li class="nav-item">
@@ -59,96 +64,31 @@
 
             <div class="row d-flex flex-row align-items-end mt-auto" id="header_action_box">   <!--  d-sm-none d-md-block -->
                 <div class="col-1 p-auto m-auto">
-                    <img class="justify-content-end d-none d-md-block" src="img/location.png" width="20px" alt="">
-                    <!-- <h2>TAMPA, FL.</h2> -->
+                    <img class="justify-content-end d-none d-sm-none d-md-none d-lg-block" src="img/location.png" width="20px" alt="">
                 </div>
-                <div class="col-2 p-0 d-none d-md-block d-xl-none ">
+
+                <div class="col-2 p-0 d-none d-sm-none d-md-none d-lg-block">
                     <h2>TAMPA, FL.</h2>
                 </div>
+
                 <div class="d-flex col-4 mx-0 px-0 justify-content-end">
-                    <h2 class="d-none d-sm-block d-xl-none">Check Availability</h2>
+                    <h2 class="d-sm-none d-md-none d-lg-block">Check Availability</h2>
                 </div>
+
                 <div class="col-4 align-self-center">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Enter you ZipCode">
+                      <input type="text" class="form-control" placeholder="Enter you ZipCode" id="inputZipCode">
                     </div>
                 </div>
-                <div class="col-1 align-self-center">
+
+                <div class="col-1 align-self-center d-none d-xl-block">
                     <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#checkAvailability" id="checkAvail">Go</button>
-
-                    <div class="modal fade" id="checkAvailability" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-
-                          <div class="modal-header">
-                            <h5 class="modal-title">Enter Your Information Below</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                              <div class="modal-body">
-                                  <form>
-                                    <div class="form-row">
-                                      <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                      </div>
-                                      <div class="form-group col-md-6">
-                                        <label for="inputPassword4">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputAddress">Address</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputAddress2">Address 2</label>
-                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                    </div>
-                                    <div class="form-row">
-                                      <div class="form-group col-md-6">
-                                        <label for="inputCity">City</label>
-                                        <input type="text" class="form-control" id="inputCity">
-                                      </div>
-                                      <div class="form-group col-md-4">
-                                        <label for="inputState">State</label>
-                                        <select id="inputState" class="form-control">
-                                          <option selected>Choose...</option>
-                                          <option>...</option>
-                                        </select>
-                                      </div>
-                                      <div class="form-group col-md-2">
-                                        <label for="inputZip">Zip</label>
-                                        <input type="text" class="form-control" id="inputZip">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">
-                                          Check me out
-                                        </label>
-                                      </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                  </form>
-                              </div>
-
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
                 </div>
-                <div class="ml-auto d-md-none">
+
+                <div class="ml-auto d-none d-sm-none d-md-none d-lg-block">
                     <a href="tel:18558444285" class="tel-link">1-855-8GI-HAUL</a>
                 </div>
+
             </div>
     </div>
     <!-- END - Above the fold  -->
@@ -304,6 +244,76 @@
 
     <!-- MODAL -->
 
+        <!-- CHECK Availability -->
+        <div class="modal fade" id="checkAvailability" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Enter Your Information Below</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+                  <div class="modal-body">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      </form>
+                  </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <!-- BOOK NOW -->
         <div class="modal fade" id="booknow" tabindex="-1" role="dialog" aria-labelledby="booknow" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -322,12 +332,10 @@
                                     <label for="recipient-name" class="col-form-label">Name:</label>
                                     <input type="text" class="form-control" id="recipient-name">
                                 </div>
-
                                 <div class="form-group" id="locationField">
                                     <label for="autocomplete" class="col-form-label">Search for your Address:</label>
                                     <input class="form-control" id="autocomplete" placeholder="Enter your address" type="text"/>  <!-- onFocus="geolocate()" -->
                                 </div>
-
                                 <div class="form-group">
                                     <label for="recipient_address" class="col-form-label">Address:</label>
                                     <input type="text" class="form-control" id="recipient_address">
@@ -410,32 +418,44 @@
         <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Contact Us!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Name:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Phone Number:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Request Quote</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form id="small_get_quote" name="small_form">
+                                <div class="form-group">
+                                    <label for="recipient_name" class="col-form-label">Name:</label>
+                                    <input type="text" class="form-control" id="recipient_name" name="recipient_name">
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                          <label for="recipient_num" class="col-form-label">Phone Number:</label>
+                                          <input type="text" class="form-control" id="recipient_num" name="recipient_num">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                          <label for="recipient_zip" class="col-form-label">Zip Code:</label>
+                                          <input type="text" class="form-control" id="recipient_zip" name="recipient_zip">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient_message" class="col-form-label">Message:</label>
+                                    <input type="text" class="form-control" id="recipient_message" name="recipient_message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="small_form_button">Request Quote</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -486,21 +506,30 @@
     <!-- END - MODAL -->
 
 
+    <!-- STATUS BOX -->
+        <!-- Success Alert -->
+        <div class="alert alert-success alert-dismissible fade show" id="requestquote_success">
+            <strong>Success!</strong> Your message has been sent successfully.
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
 
+    <!-- END - STATUS BOX -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src ="jquery.serializeObject.js"></script>
 
     <!-- FUNCTIONAL EXAMPLE - NOT MY KEY  -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete" async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete" async defer></script> -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByj8ZJDEpG-1mhz1ZvQk2eEvOqonNGpbU&libraries=places&callback=initAutocomplete" async defer></script> -->
 
     <!-- MY ORIGINAL JAVASCRIPT FOR GOOGLE'S API -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByj8ZJDEpG-1mhz1ZvQk2eEvOqonNGpbU&libraries=places"></script> -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByj8ZJDEpG-1mhz1ZvQk2eEvOqonNGpbU&libraries=places&callback=initAutocomplete"></script> -->
     <script src="script.js"> </script>
+    <script src="script2.js"> </script>
   </body>
 </html>
